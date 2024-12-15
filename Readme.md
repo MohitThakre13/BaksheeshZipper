@@ -1,71 +1,86 @@
-# Zip and Encrypt Software
+# Baksheesh Cipher Analysis and Software Implementation
 
-This software provides functionality to **zip and encrypt** a folder, as well as **decrypt and unzip** it. The encryption process uses the **Baksheesh Cipher** for securing data.
-
----
-
-## Features
-- Compress a folder into a single file.
-- Encrypt the compressed file using the **Baksheesh Cipher**.
-- Decrypt the encrypted file back to its original state.
-- Extract the decrypted content to retrieve the original folder structure.
+This repository contains an in-depth study and analysis of the **Baksheesh Cipher**, alongside a software implementation that demonstrates its practical use in encrypting and compressing folders. The software enables users to **zip and encrypt** folders as well as **decrypt and unzip** them securely.
 
 ---
 
-## File Structure
+## About the Baksheesh Cipher
+
+The **Baksheesh Cipher** is a custom encryption technique that ensures data confidentiality and integrity. Our work includes:
+
+- A thorough analysis of the cipher's principles, design, and security properties.
+- An exploration of its strengths and areas of applicability in modern encryption scenarios.
+- A practical implementation that highlights its real-world use.
+
+---
+
+## Software Implementation
+
+The software implementation of the Baksheesh Cipher can be found in the `software` folder. It includes:
+
+- **zipEncrypt.py**: Zips a folder and encrypts it using the Baksheesh Cipher.
+- **decryptUnzip.py**: Decrypts the encrypted file and unzips it back to its original structure.
+
+---
+
+## Repository Structure
+
 ```
-software/
+repository/
 │
-├── zipEncrypt.py    # Script to zip and encrypt a folder
-├── decryptUnzip.py  # Script to decrypt and unzip a folder
-└── README.md        # Documentation
+├── software/
+│   ├── zipEncrypt.py    # Script to zip and encrypt a folder
+│   ├── decryptUnzip.py  # Script to decrypt and unzip a folder
+│   └── README.md        # Software documentation
+│
+├── analysis/            # Detailed analysis of the Baksheesh Cipher
+│   └── baksheesh_report.pdf
+│
+└── README.md            # Introduction to the repository
 ```
 
 ---
-## Usage
-### 1. Zipping and Encrypting a Folder
-To zip and encrypt a folder:
 
-```bash
-python zipEncrypt.py
-```
-- `folder_path`: Path to the folder you want to compress and encrypt.
-- `output_file`: Name of the output encrypted file.
+## Key Features
 
-
+- **In-Depth Analysis**: Comprehensive study of the Baksheesh Cipher.
+- **Secure Compression**: Combines zipping and encryption for efficient and secure data storage.
+- **Practical Implementation**: Software to zip/encrypt and decrypt/unzip folders.
 
 ---
 
-### 2. Decrypting and Unzipping a Folder
-To decrypt and unzip a file:
+## Prerequisites
 
-```bash
-python decryptUnzip.py
+- Python 3.x
+- Required libraries: Install your passion for cryptography.
+
 ```
-- `input_file_path`: Path to the encrypted file.
-- `output`: Folder's name where the decrypted content will be extracted.
-
-
+pip install crypto-love :)
+```
+- Cryptographic mathematics and concepts.
 
 ---
 
-## Encryption Algorithm: Baksheesh Cipher
-The **Baksheesh Cipher** is a custom encryption technique used in this software. It ensures data security during compression and storage.
+
 
 ---
 
 ## License
-This software is open source. Feel free to use, modify, and distribute it.
+
+This repository is open source. Feel free to use, modify, and distribute it.
 
 ---
 
-## Author
-Developed by **Mohit Thakre, Nischay Rajput** and **Harsh Prajapati**.
+## Authors
+
+Developed and analyzed by **Nischay Rajput, Mohit Thakre** and **Harsh Prajapati**.
 
 ---
 
 ## Notes
-- Always ensure you back up your encrypted files.
-- For any issues or feature requests, please raise them in the relevant repository or contact the author.
+
+- The analysis of the Baksheesh Cipher is provided in the `analysis` folder.
+- Always back up your encrypted files.
+- For questions or feature requests, contact the repository maintainer.
 
 
